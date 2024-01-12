@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
-import MenuArea from "./menuArea";
-import PageHeader from "./pageHeader";
+import MenuArea from "@/components/menuArea";
+import PageHeader from "@/components/pageHeader";
 import {
   Carousel,
   CarouselContent,
@@ -9,11 +9,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import EmployeeCard from "./card";
-
+import EmployeeCard from "@/components/card";
 function CardSlider() {
   const [clickedButtonId, setClickedButtonId] = useState(null);
-  const cardAreaRef = useRef(null);
 
   const handleButtonClick = (id) => setClickedButtonId(id);
 
